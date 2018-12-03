@@ -32,8 +32,8 @@ How to configure Dockerfile and VS Code to remotely debug with DRAFT an applicat
 2. Configure draft to use ACR <code>draft config set registry ACR_name.azurecr.io</code>
 3. ACR login <code>docker login ACR_name.azurecr.io</code>
 4. (**only if you are using your custom Dockerfile, the Dockerfile that you can find in this solution is ready for the remote debug**) Changes required for the Dockerfile
-    - line 9 --> change from <code>Release</code> to <code>Debug</code>
-    - after the line 14 add the following code
+    - change the configuration from <code>Release</code> to <code>Debug</code>
+    - add the following code
     ```
       # install ps
       RUN apt-get update && apt-get install -y procps
